@@ -1,0 +1,76 @@
+.popular-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.popular-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    padding-right: 1rem;
+    /* Ensures margin from the right */
+    padding-left: 1rem;
+    /* Adds balance for both sides */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .popular-grid {
+        padding-right: 1rem;
+        /* Adjust padding for smaller screens */
+        padding-left: 1rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .popular-grid {
+        gap: 30px;
+        /* Smaller gap for compact layout */
+        padding-right: 0.5rem;
+        /* Slightly reduced padding */
+        padding-left: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+    }
+}

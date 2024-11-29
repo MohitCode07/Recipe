@@ -1,0 +1,89 @@
+.search-field {
+    height: 45px;
+    width: 100%;
+    max-width: 550px;
+    outline: none;
+    padding-left: 40px;
+    background: linear-gradient(35deg, #34495E, #2C3E50);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't overflow */
+    transition: all 0.3s ease;
+    /* Smooth transitions for responsiveness */
+}
+
+.search-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Subtle placeholder color */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 15px;
+    width: 100%;
+    /* Ensures proper spacing on smaller screens */
+    box-sizing: border-box;
+    /* Prevents horizontal overflow */
+}
+
+form {
+    position: relative;
+    width: 100%;
+    /* Ensures the form scales properly */
+    max-width: 550px;
+    /* Restricts max width for better UX */
+}
+
+form svg {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translate(0, -50%);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .search-field {
+        height: 40px;
+        font-size: 14px;
+        padding-left: 35px;
+        /* Adjust padding for smaller screens */
+    }
+
+    form svg {
+        font-size: 16px;
+        /* Smaller icon size for compact design */
+        left: 8px;
+        /* Adjust position */
+    }
+
+    .search-container {
+        margin: 15px 0;
+        /* Adjusted margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-field {
+        height: 35px;
+        /* Further reduce height for very small screens */
+        font-size: 12px;
+        /* Reduce font size */
+        padding-left: 30px;
+        /* Adjust padding */
+    }
+
+    form svg {
+        font-size: 14px;
+        /* Smaller icon size for compact design */
+        left: 6px;
+        /* Adjust position */
+    }
+}

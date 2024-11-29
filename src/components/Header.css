@@ -1,0 +1,50 @@
+.header-container {
+    margin: 0;
+    /* Removed negative margins for proper alignment */
+    padding: 15px 20px;
+    /* Adjusted padding */
+    width: 100%;
+    /* Ensures the header spans the entire width */
+    background-color: #2C3E50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
+}
+
+.header-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #E74C3C;
+    margin: 0;
+    /* Prevents default margin */
+}
+
+.header-container a {
+    text-decoration: none;
+    color: inherit;
+    /* Ensures the link inherits the text color */
+}
+
+.user-img {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px 15px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .header-container h1 {
+        font-size: 1.4rem;
+        /* Reduced font size for better responsiveness */
+    }
+}

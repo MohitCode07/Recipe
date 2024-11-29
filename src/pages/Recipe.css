@@ -1,0 +1,125 @@
+.recipe-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centers content for smaller screens */
+}
+
+.recipe-container-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    /* Ensures the image scales responsively */
+}
+
+.recipe-container-right {
+    flex: 2;
+    min-width: 300px;
+    max-width: 100%;
+    /* Ensures the recipe content scales properly */
+}
+
+.recipe-imgs {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.instructions {
+    text-align: justify;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    /* Ensures buttons wrap properly */
+    justify-content: center;
+    /* Align buttons centrally */
+}
+
+.btn-container button {
+    background-color: #202020;
+}
+
+.recipe-right-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 30px;
+}
+
+.summary h2,
+.instructions h2 {
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipe-shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* Ensures shimmer content centers */
+}
+
+.recipe-shimmer-left,
+.recipe-shimmer-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.btn-shimmer-right {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Ensures shimmer buttons wrap properly */
+}
+
+.text-container-shimmer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ingredients-h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        /* Stacks content vertically */
+        gap: 20px;
+    }
+
+    .recipe-container-left,
+    .recipe-container-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .btn-container {
+        gap: 15px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .recipe-imgs {
+        margin-bottom: 15px;
+        /* Adds spacing between the image and content */
+    }
+}
